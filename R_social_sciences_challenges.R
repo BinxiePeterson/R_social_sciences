@@ -278,3 +278,36 @@ months_lack_food <- interviews %>%
 
 # . -----------------------------------------------------------------------
 
+
+# CHALLENGE 15 ------------------------------------------------------------
+
+# Create a bar plot showing the proportion of respondents in each village who 
+# are or are not part of an irrigation association (memb_assoc). Include 
+# only respondents who answered that question in the calculations and plot. 
+# Which village had the lowest proportion of respondents in an irrigation association?
+
+percent_memb_assoc <- interviews_plotting %>%
+  filter(!is.na(memb_assoc)) %>%
+  count(village, memb_assoc) %>%
+  group_by(village) %>%
+  mutate(percent = (n / sum(n)) * 100) %>%
+  ungroup()
+
+
+
+# . -----------------------------------------------------------------------
+
+
+# CHALLENGE 16 ------------------------------------------------------------
+
+# Try to improve one of the plots generated in
+# this exercise or make one of your own
+
+# Some ideas:
+# Change the thickness of the lines
+# Change the name of the legend and the labels
+# Try using a different color palette (http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/)
+
+
+# . -----------------------------------------------------------------------
+
