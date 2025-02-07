@@ -648,6 +648,10 @@ levels(x)
 
 ![](images/Dates.PNG){fig-align="center"}
 
+## Date formats {.hcenter}
+
+![](images/date_formats.png){fig-align="center"}
+
 ## Time for... {.hcenter}
 
 ![](images/Practical.PNG){fig-align="center"}
